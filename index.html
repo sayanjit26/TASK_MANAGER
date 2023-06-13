@@ -12,7 +12,7 @@
     <!--Navbar  -->
     <nav class="bg-white shadow-lg w-screen h-16">
         <!-- Hamburger Menu Icon -->
-        <div class="fixed top-[21px] right-[92rem] text-[25px] cursor-pointer" onclick="Open(this)">
+        <div class="fixed top-[21px] ml-5 text-[25px] cursor-pointer" onclick="Open(this)">
             <svg xmlns="http://www.w3.org/2000/svg" height="1em"
                 viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                 <path
@@ -24,14 +24,22 @@
         <div class="fixed bg-[#0bbbbb] w-0 text-white h-screen flex justify-center items-center text-[40px] tracking-[1px] overflow-hidden origin-left duration-500"
             id="hamburger">
             <ul>
-                <li class="hover:text-green-300 hover:drop-shadow-xl hover:translate-y-[-5px]"><a href="#">Add Task</a>
-                </li>
-                <li class="hover:text-green-300 hover:drop-shadow-xl hover:translate-y-[-5px]"><a href="#">Delete
-                        Task</a></li>
+                <div class="flex"><img src="https://cdn1.iconfinder.com/data/icons/Mobile-Icons/128/07_note.png"
+                        class="cursor-pointer opacity-[0.6] hover:opacity-[9] w-16" />
+                    <li class="hover:text-green-300 hover:drop-shadow-xl hover:translate-y-[-5px]"><a href="#">New
+                            Task</a>
+                    </li>
+                </div><br />
+                <div class="flex"><img
+                        src="https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/trash-128.png"
+                        class="cursor-pointer opacity-[0.6] hover:opacity-[9] w-14" />
+                    <li class="hover:text-green-300 hover:drop-shadow-xl hover:translate-y-[-5px]"><a href="#">Delete
+                            Task</a></li>
+                </div>
             </ul>
 
             <!-- Close Button-->
-        
+
             <div class="absolute top-[13px] right-[20px] text-[40px] cursor-pointer" onclick="Close(this)">
                 <svg xmlns="http://www.w3.org/2000/svg" height="1em"
                     viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
